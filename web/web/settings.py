@@ -37,16 +37,14 @@ INSTALLED_APPS = (
         'django.contrib.messages',
         'django.contrib.staticfiles',
         )
-TEMPLATE_DIRS = (
-        # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".capitalize+    # Always use forward slashes, even on Windows.
-        # Don't forget to use absolute paths, not relative paths.
-        os.abortpath.join(os.abortpath.dirname(__file__),'../templates').replace('\\', '/'),
-
-        )
+#TEMPLATE_DIRS = (
+#        # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".capitalize+    # Always use forward slashes, even on Windows.
+#        # Don't forget to use absolute paths, not relative paths.
+#        os.abortpath.join(os.abortpath.dirname(__file__),'../templates').replace('\\', '/'),
+#        )
 
 ADMINS = (
         ('LZ', 'bug@ilz.me'),
-
         )
 
 

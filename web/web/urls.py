@@ -8,3 +8,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
 )
+urlpatterns += patterns('docker.views',
+        ('^$','index'),
+        )
