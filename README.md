@@ -8,7 +8,7 @@
     apt-get install lxc-docker -y --force-yes
 
     cat <<EOF>> /etc/default/docker
-    DOCKER_OPTS="-H unix:///var/run/docker.sock -H 0.0.0.0:4243 --insecure-registry 10.58.113.37:5000"
+    DOCKER_OPTS="-H unix:///var/run/docker.sock -H 0.0.0.0:4243 --insecure-registry 127.0.0.1:5000"
     EOF
 
     sudo docker run -d -e SETTINGS_FLAVOR=dev -e STORAGE_PATH=/tmp/registry -v /opt/data/registry:/tmp/registry  -p 5000:5000 registry
